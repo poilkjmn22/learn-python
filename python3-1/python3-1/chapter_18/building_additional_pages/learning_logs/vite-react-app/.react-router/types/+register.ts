@@ -8,4 +8,8 @@ declare module "react-router" {
 
 type Params = {
   "/": {};
+  "/topics": {};
+  "/topics/:topicId": {
+    "topicId": string;
+  };
 };
