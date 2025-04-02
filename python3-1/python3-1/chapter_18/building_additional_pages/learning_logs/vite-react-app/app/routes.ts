@@ -1,4 +1,4 @@
-import { type RouteConfig, layout} from "@react-router/dev/routes";
+import { type RouteConfig, layout } from "@react-router/dev/routes";
 
 export default [
     layout("routes/layout.tsx", [
@@ -13,7 +13,14 @@ export default [
         {
             path: "topics/:topicId",
             file: "routes/topics.$topicId.tsx",
-            // loader: loader
         },
+        {
+            path: "newTopic/:topicId?",
+            file: "routes/newTopic.tsx",
+        },
+        {
+            path: "newEntry/:topicId/:entryId?",
+            file: "routes/newEntry.$topicId.tsx",
+        }
     ])
 ] satisfies RouteConfig;

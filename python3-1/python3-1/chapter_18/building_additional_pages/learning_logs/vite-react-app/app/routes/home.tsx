@@ -10,9 +10,6 @@ export default function Index() {
                 <p className="text-gray-700 mb-4">
                     在这里，您可以创建新的学习主题，记录您的学习笔记，并与他人分享您的见解。
                 </p>
-                <button className="bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600">
-                    创建新主题
-                </button>
             </div>
             <footer className="mt-6 text-gray-600">
                 <p>© 2023 学习日志. 保留所有权利.</p>
